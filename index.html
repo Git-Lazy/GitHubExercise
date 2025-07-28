@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="CSC210 - Intro to Web Presentation and Development">
+        <meta name="keywords" content="Neumont, CSC210, web dev, web development, student, HTML 5, C553">
+        <meta name="author" content="Samuel Elesho">
+
+        <title>Neumont CSC210 - Introduction to Web Development and Presentation</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="style.css">
+        <button class="theme-toggle" id="theme-toggle">🌛 Dark Mode</button>
+        <header role="banner">
+            <h1>Home Page</h1>
+            <div class="conatiner">
+                <p class="tagline">Samuel Elesho - Neumont Student</p>
+            </div>
+        </header>
+
+        <!-- HTML5 Semantic Navigation -->
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <li><a href="interests.html" aria-describedby="interests-desc">My Interests</a></li>
+                <li><a href="favorites.html" aria-describedby="favorites-desc">Favorite Sites</a></li>
+                <li><a href="plans.html" aria-describedby="plans-desc">Future Plans</a></li>
+            </div>
+        </nav>
+        
+        <!-- HTML5 Main Content -->
+        <main id="main-content" role="main">
+            <div class="container">
+                <!-- About Section with HTML5 semantic elements -->
+                <section id="about" aria-labelledby="about-heading">
+                    <h2 id="about-heading">About Me</h2>
+                    <div class="about-content">
+                        <div class=""about-text>
+                            <img src="pictureOfMe.jpg" alt="picture of Samuel Elesho" width="150" height=" 200">
+                            <p>Hello my name is Samuel Elesho, and I'm a student at <strong>Neumont</strong>, born in <strong> Nigeria</strong>, raised - mostly - 
+                                in Georgia. I enjoy doing a couple things both in person and online. I love listening to music, and don't mind finding new music to listen 
+                                to whenever I can. I also enjoy reading, sleeping, and I don't mind a good walk everyonce in a while. and I love doing all of those 
+                                things while listening to music.</p>
+                            <p>While I don't mind hanging around other people, I do prefer to have some quiet a lone time everyonce in a while. I love driving
+                                and traveling in general. I usually do activities with my family, but as I am in college - out of state - I travel home during some
+                                of my longer breaks. While the college experience is different, I honestly don't mind most of it, other then being a little home sick.
+                            </p>
+                        </div>
+                    </div>
+                    </aside>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p class="footnote">Copyright ©2025 by Samuel Elesho</p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
