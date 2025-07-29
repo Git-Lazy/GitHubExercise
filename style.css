@@ -4,6 +4,7 @@
     --text-primary: #333;
     --color-primary: #06c;
     --color-accent: #eaf3fc;
+    --hover-color: rgb(0, 51, 204);
     --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -11,7 +12,8 @@ body.dark-theme {
     --bg-primary: #1a1a1a;
     --bg-secondary: #2d2d2d;
     --text-primary: #e0e0e0;
-    --color-primary: #66b3ff;
+    --color-primary: #762a0f;
+    --hover-color: #bb1a15;
     --color-accent: #3a3a3a;
 }
 
@@ -91,13 +93,49 @@ nav a {
     font-weight: bold;
     transition: color 0.3s ease;
 }
-/* how it looks liek when you hover over the hyperlink */
+/* how it looks like when you hover over the hyperlink */
 nav a:hover {
-    color: blue;
+    color: var(--hover-color);
     text-decoration: underline;
 }
 
-/* ABOUT SELECTION */
+/* QUOTE SECTION */
+#quote {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+/* SKILLS SECTION */
+#skills {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+/* SLIDE SHOW */
+#slideshow {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+/* PROJECTS SECTION */
+#project {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+/* ABOUT SECTION */
 #about {
     background-color: var(--bg-secondary);
     padding: 1.5rem;
