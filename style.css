@@ -1,0 +1,181 @@
+:root {
+    --bg-primary: #f4f6f8;
+    --bg-secondary: white;
+    --text-primary: #333;
+    --color-primary: #06c;
+    --color-accent: #eaf3fc;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --text-primary: #e0e0e0;
+    --color-primary: #66b3ff;
+    --color-accent: #3a3a3a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+blockquote {
+    text-align: center;
+}
+
+.top {
+    text-align: center;
+}
+
+.footnote {
+    font-size: 12px;
+    font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+table {
+    text-align: center;
+}
+
+body {
+    font-family: "Segoe UI";
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* NAVIATION */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 1rem 0 2rem 0;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+/* how the hyperlinks look and how they transport you to the new page */
+nav a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+/* how it looks liek when you hover over the hyperlink */
+nav a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* ABOUT SELECTION */
+#about {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+/* INTERESTS ASIDE */
+aside.interests {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-left: 4px sold #004a99;
+    border-radius: 4px;
+}
+
+aside.intersts ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside.intersts li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* DETAILS DROPDOWN */
+details {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Dark mode Button */
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Dark theme header */
+body.dark-theme header {
+    background-color: var(--bg-secondary);
+}
+
+/* Print Styles */
+@media print {
+    .theme-toggle {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+}
